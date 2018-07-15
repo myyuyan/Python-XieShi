@@ -33,7 +33,7 @@ def init():
 					ge.append(te)
 			for text in ge:
 				ls=list(text)
-				if pinyin(ls[10]).endswith(geshi3):
+				if  pinyin.get(ls[10],format="strip").endswith(geshi3):
 					jieguo+=text+"\r\n"
 					n+=1
 				if n==2:
@@ -47,7 +47,7 @@ def init():
 					ge.append(te)
 			for text in ge:
 				ls=list(text)
-				if pinyin(ls[10]).endswith(geshi3):
+				if  pinyin.get(ls[10],format="strip").endswith(geshi3):
 					jieguo+=text+"\r\n"
 					n+=1
 				if n==4:
@@ -60,7 +60,7 @@ def init():
 					ge.append(te)
 			for text in ge:
 				ls=list(text)
-				if pinyin(ls[10]).endswith(geshi3):
+				if  pinyin.get(ls[10],format="strip").endswith(geshi3):
 					jieguo+=text+"\r\n"
 					n+=1
 				if n==4:
