@@ -33,7 +33,7 @@ def init():
 					ge.append(te)
 			for text in ge:
 				ls=list(text)
-				if  pinyin.get(ls[10],format="strip").endswith(geshi3):
+				if  pinyin.get(ls[14],format="strip").endswith(geshi3):
 					jieguo+=text+"\r\n"
 					n+=1
 				if n==2:
@@ -41,7 +41,7 @@ def init():
 					print("韵脚为："+geshi3)
 					break
 	else:
-		if geshi2==1:
+		if geshi2=="1":
 			for te in zifu:
 				if len(te)==13:
 					ge.append(te)
@@ -60,7 +60,7 @@ def init():
 					ge.append(te)
 			for text in ge:
 				ls=list(text)
-				if  pinyin.get(ls[10],format="strip").endswith(geshi3):
+				if  pinyin.get(ls[14],format="strip").endswith(geshi3):
 					jieguo+=text+"\r\n"
 					n+=1
 				if n==4:
